@@ -1,7 +1,9 @@
+let token;
 fetch('https://chartwithme.herokuapp.com/feed//posts',{
+    method: 'GET',
     headers: {
         'Content-Type': 'application/json',
-        'token':token
+        Authorization: 'Bearer ' + token
     }
 })
   .then((response) => {
