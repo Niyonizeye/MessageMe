@@ -1,0 +1,11 @@
+
+.login-form{
+    position:relative;
+    top:30%;
+    background: #4d4c4e;
+    border-radius: 5px;
+    box-shadow: #f1f1f1;
+    padding: 20px;
+    color: white;
+
+}
