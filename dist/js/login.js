@@ -12,14 +12,13 @@ loginBtn.addEventListener('click',(event)=>{
     fetch('https://chartwithme.herokuapp.com/auth/login', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
-            'token':token
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify(myPost)
     })
         .then((res) => res.json())
         .then((data) => {
           console.log(data)
-          window.location.replace('https://niyonizeye.github.io/Message/dashboard.html');
+          window.location.replace('https://niyonizeye.github.io/MessageMe/dashboard.html');
         })
 })
