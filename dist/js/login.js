@@ -8,7 +8,6 @@ loginBtn.addEventListener('click',(event)=>{
         email: email, 
         password: password
       }
-      console.log(myPost);
     fetch('https://chartwithme.herokuapp.com/auth/login', {
         method: 'POST',
         headers: {
