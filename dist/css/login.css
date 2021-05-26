@@ -11,5 +11,10 @@
 }
 .success{
     background: green;
-    padding: 5px 3px;
+}
+.Error{
+    color: red;
+}
+#signupForm{
+    display: none;
 }

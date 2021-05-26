@@ -14,11 +14,32 @@
         <div class="col-md-4"></div>
    
      <div class="col-md-4">
-       <div class="container login-form">
+       <div class="container login-form" id="loginform">
         <form>
             <div class="mb-3">
                 <label for="title">
                     <h4>Login to Let'sgo</h4>
+                </label>
+                <div class="success"></div>
+                <div class="Error"></div>
+            </div>
+            <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password">
+            </div>
+            <button type="button" id="loginBtn" class="btn btn-primary">Login </button> Or
+            <button type="button" id="signupBtn" class="btn btn-primary">Signup </button>
+        </form>
+       </div>
+       <div class="container login-form" id="signupForm">
+        <form>
+            <div class="mb-3">
+                <label for="title">
+                    <h4>Create an account to Let'sgo</h4>
                 </label>
                 <div class="success"></div>
             </div>
@@ -30,13 +51,18 @@
             <label for="password" class="form-label">Password</label>
             <input type="password" class="form-control" id="password">
             </div>
-            <button type="button" id="loginBtn" class="btn btn-primary">Login </button>
+            <div class="mb-3">
+            <label for="FullName" class="form-label">FullName</label>
+            <input type="text" class="form-control" id="fullname">
+            </div>
+            <button type="button" id="loginBtn" class="btn btn-primary">Login </button> Or
+            <button type="button" id="signupBtn" class="btn btn-primary">Signup </button>
         </form>
        </div>
     </div>
     <div class="col-md-4"></div>
 </div>
-<!-- <script src="dist/js/login.js"></script> -->
+<script src="dist/js/login.js"></script>
 <script src="./api.js"></script>
 </body>
 
